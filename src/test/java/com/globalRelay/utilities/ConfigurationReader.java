@@ -1,4 +1,4 @@
-package com.globalRelay.utils;
+package com.globalRelay.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

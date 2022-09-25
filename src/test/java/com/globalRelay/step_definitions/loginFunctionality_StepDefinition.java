@@ -2,15 +2,15 @@ package com.globalRelay.step_definitions;
 
 import com.globalRelay.pages.GlobalRelayHomePage;
 import com.globalRelay.pages.GlobalRelayLoginPage;
-import com.globalRelay.utils.BrowserUtility;
-import com.globalRelay.utils.ConfigurationReader;
-import com.globalRelay.utils.Driver;
+import com.globalRelay.utilities.BrowserUtilities;
+import com.globalRelay.utilities.ConfigurationReader;
+import com.globalRelay.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class loginStepDefinition {
+public class loginFunctionality_StepDefinition {
 
     GlobalRelayHomePage globalRelayHomePage = new GlobalRelayHomePage();
     GlobalRelayLoginPage globalRelayLoginPage = new GlobalRelayLoginPage();
@@ -29,11 +29,11 @@ public class loginStepDefinition {
 
         String targetTitle ="General Authentication Service - Global Relay Archive & Compliance Reviewer";
 
-        BrowserUtility.switchToWindow(targetTitle);
+        BrowserUtilities.switchToWindow(targetTitle);
 
         Assert.assertTrue("Login input box does not display",globalRelayLoginPage.LoginID_InputBox.isDisplayed());
 
-        globalRelayLoginPage.LoginID_InputBox.sendKeys("I can enter userName");
+        globalRelayLoginPage.LoginID_InputBox.sendKeys("Sorry I don't have a valid account");
 
 
 

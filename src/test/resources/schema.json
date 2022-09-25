@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "patientId",
+    "url",
+    "givenName",
+    "familyName",
+    "dateOfBirth",
+    "nationality"
+  ],
+  "properties": {
+    "patientId": {
+      "type": "integer",
+      "default": 0,
+      "title": "The patientId Schema",
+      "examples": [
+        1
+      ]
+    },
+    "url": {
+      "type": "string",
+      "default": "",
+      "title": "The url Schema",
+      "examples": [
+        "http://en.wikipedia.org/wiki/Carlo_Mario_Abate"
+      ]
+    },
+    "givenName": {
+      "type": "string",
+      "default": "",
+      "title": "The givenName Schema",
+      "examples": [
+        "Carlo"
+      ]
+    },
+    "familyName": {
+      "type": "string",
+      "default": "",
+      "title": "The familyName Schema",
+      "examples": [
+        "Abate"
+      ]
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "default": "",
+      "title": "The dateOfBirth Schema",
+      "examples": [
+        "1932-07-10"
+      ]
+    },
+    "nationality": {
+      "type": "string",
+      "default": "",
+      "title": "The nationality Schema",
+      "examples": [
+        "Italian"
+      ]
+    }
+  },
+  "examples": [{
+    "patientId": 1,
+    "url": "http://en.wikipedia.org/wiki/Carlo_Mario_Abate",
+    "givenName": "Carlo",
+    "familyName": "Abate",
+    "dateOfBirth": "1932-07-10",
+    "nationality": "Italian"
+  }]
+}

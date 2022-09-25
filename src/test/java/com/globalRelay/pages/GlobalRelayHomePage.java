@@ -1,6 +1,6 @@
 package com.globalRelay.pages;
 
-import com.globalRelay.utils.Driver;
+import com.globalRelay.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
