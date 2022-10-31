@@ -1,5 +1,6 @@
 package com.globalRelay.step_definitions;
 
+import com.globalRelay.utilities.Driver;
 import io.cucumber.java.it.Ma;
 
 import java.util.*;
@@ -86,7 +87,7 @@ public class interview {
 
         System.out.println(Arrays.toString(sortAscendingOrder(new int[]{9, 4, 23, 6, 78, 4})));
 
-
+        System.out.println(Driver.getDriver());
     }
 
 

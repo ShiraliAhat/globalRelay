@@ -47,10 +47,15 @@ public class getRequest {
     @Test
     public void test1(){
 
-        given().accept(ContentType.JSON)
+        JsonPath js = given().accept(ContentType.JSON)
                 .get("http://ergast.com/api/f1/drivers.Json").prettyPeek()
                 .then().assertThat().statusCode(200)
-                .and().assertThat().body("MRData.DriverTable.Drivers.driverId[0]", Matchers.equalTo("abate"));
+                .and().assertThat().body("MRData.DriverTable.Drivers.driverId[0]", Matchers.equalTo("abate")).extract().jsonPath();
+        System.out.println("===============================");
+        List<Map<String,String>> listOfMap = js.getList("MRData.DriverTable.Drivers");
+
+
+        System.out.println(listOfMap.get(0));
 
     }
 
